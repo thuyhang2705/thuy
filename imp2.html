@@ -1,0 +1,286 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Dat ve tau</title>
+
+
+  <style>
+
+    #container{
+      height: 600px;
+      width:2000px;
+      padding:20px;
+    }
+    #container .header{
+      text-align: center;
+      color: red;
+      font-size: 20px;
+    }
+    #container #content1{
+      margin-left: 400px;
+      padding: 20px;
+
+
+    }
+    #container #content1 #div1{
+      font-weight: inherit;
+      background-color: #F6F6F6;
+      width: 380px;
+      height: 300px;
+      margin: 4px;
+      padding: 20px;
+      border: 2px solid black;
+      text-align: left;
+      position: relative;
+      float: left;
+
+    }
+    #container #content1 #div1 .canh{
+      color: #007bff;
+      font-size: 20px;
+    }
+    #container #content1 #div1 .tab-content{
+      float: left;
+      margin-left:30px;
+      padding: 2px;
+
+    }
+    #container #content1 #div1 .date {
+      float: left;
+    }
+    #container #content1 #div1 .date .date1{
+      margin-left:20px;
+
+    }
+    #container #content1 #div1 .date .pix-text{
+      margin-left: 10px;
+    }
+    #container #content1 #div1 .year {
+      float: left;
+
+    }
+    #container #content1 .year .edit-label1{
+      margin-left:20px;
+
+    }
+    #container #content1 .year  .pix-text{
+      margin-left: 10px;
+    }
+    #container #content1 .chontoa{
+      float: left;
+      margin-top:-1px;
+      padding:5px;
+    }
+
+
+    #container #content1 .chontoa .edit-label2{
+
+      margin-left: 15px;
+    }
+    #container #content1 .chontoa .select3{
+      padding-right: 10px;
+    }
+
+    #container #content1 .chonghe{
+      float: left;
+      margin-top:-40px;
+      padding-left: 50px;
+    }
+    #container #content1 .chonghe .edit-label3{
+      margin-top:-40px;
+      padding-left: 120px;
+    }
+    #container #content1 .chonghe .select4{
+      float: right;
+      margin-left: 20px;
+    }
+
+    #container #content1 #div1 .btnsub{
+      margin-left: 95px;
+      padding: 35px;
+    }
+    #container #content1 #div1 #agree1 {
+      float: left;
+      width: 150px;
+      height: 30px;
+      background: #F1C232;
+      font-weight: bold;
+      margin-left: -35px;
+    }
+    #container #content1 #item{
+      padding-left: 20px;
+      margin-top:8px;
+
+    }
+    #container #column{
+      magrin-right:900px;
+      float:left;
+    }
+    #container .row{
+      margin-left: 450px;
+      float: left;
+
+    }
+    #container .row .menu1{
+      background-color: #EAEAEA;
+      width:300px;
+      height: 150px;
+    }
+    #container .row .menu1 .canh1{
+      color:  #007bff;
+      font-size: 20px;
+      margin-left: 5px;
+    }
+    #container .row .menu1 .canh2{
+      text-align: center;
+      color: red;
+    }
+    #container .row .menu1 .button{
+      margin-left: 125px;
+    }
+    #container .row .title{
+      color: #007bff;
+      padding: 20px;
+      text-align: center;
+    }
+    #container .row .icon{
+      margin-left: 100px;
+    }
+    #container .row .edit-label{
+      margin-left: 20px;
+    }
+
+  </style>
+
+  <link rel="stylesheet" href="bootstrap-4.3/bootstrap-4.3.1-dist/css/bootstrap.css">
+  <link rel="stylesheet" href="bootstrap-4.3/bootstrap-4.3.1-dist/css/bootstrap-grid.css">
+  <link rel="stylesheet" href="bootstrap-4.3/bootstrap-4.3.1-dist/css/bootstrap-reboot.css">
+</head>
+<body>
+
+<div id="container">
+  <div class="header"><h2>Đặt Vé Tàu</h2></div>
+  <div id="content1">
+    <div id="div1">
+      <h3 class="canh">Xem giờ và giá tàu- Ngay bây giờ</h3>
+      <label for="text" class="edit-label">Ga đi</label>
+      <select id="select1" >
+        <option value="choose" class="edit-op" selected>Sài Gòn</option>
+        <option value="save" class="edit-op">Dĩ An</option>
+        <option value="express" class="edit-op">Biên Hòa</option>
+        <option value="choose" class="edit-op" selected> Long Khánh</option>
+        <option value="save" class="edit-op">Đức Phổ</option>
+        <option value="express" class="edit-op">Tam kì</option>
+        <option value="choose" class="edit-op" selected>Huế</option>
+        <option value="save" class="edit-op">Nghệ An</option>
+        <option value="express" class="edit-op">Hà Nội</option>
+      </select>
+
+      <label for="text" class="edit-label">Ga đến</label>
+      <select id="select2" >
+        <option value="choose" class="edit-op" selected>Sài Gòn</option>
+        <option value="save" class="edit-op">Dĩ An</option>
+        <option value="express" class="edit-op">Biên Hòa</option>
+        <option value="choose" class="edit-op" selected> Long Khánh</option>
+        <option value="save" class="edit-op">Đức Phổ</option>
+        <option value="express" class="edit-op">Tam kì</option>
+        <option value="choose" class="edit-op" selected>Huế</option>
+        <option value="save" class="edit-op">Nghệ An</option>
+        <option value="express" class="edit-op">Hà Nội</option>
+      </select>
+
+      <div class="tab-content">
+        <form>
+          <input name="loai" type="radio" value="1 chiều" />1 chiều
+          <input name="loai" type="radio" value="Khứ hồi" />Khứ hồi
+          <input name="loai" type="radio" value="Cả 2" />Cả 2
+        </form>
+      </div>
+
+      <div class="date">
+        <label for="text" class="date1">Ngày đi</label>
+        <input type="date" name="date" placeholder="" class="pix-text">
+      </div>
+      <div class="year">
+        <label for="text" class="edit-label1">Ngày về</label>
+        <input type="date" name="date" id="choosesyear" placeholder="" class="pix-text">
+      </div>
+      <div class="chontoa">
+      <label for="text" class="edit-label2">Chọn toa</label>
+      <select class="select3" >
+        <option value="choose" class="edit-op" selected>A1</option>
+        <option value="save" class="edit-op">A2</option>
+        <option value="express" class="edit-op">A3</option>
+        <option value="choose" class="edit-op" selected>B1</option>
+        <option value="save" class="edit-op">B2</option>
+        <option value="express" class="edit-op">B3</option>
+        <option value="choose" class="edit-op" selected>C1</option>
+        <option value="save" class="edit-op">F2</option>
+        <option value="express" class="edit-op">G6</option>
+      </select>
+      </div>
+      <div class="chonghe">
+      <label for="text" class="edit-label3">Chọn ghế</label>
+      <select class="select4" >
+        <option value="choose" class="edit-op" selected>1A</option>
+        <option value="save" class="edit-op">2B</option>
+        <option value="express" class="edit-op">3C</option>
+        <option value="choose" class="edit-op" selected>4D</option>
+        <option value="save" class="edit-op">5E</option>
+        <option value="express" class="edit-op">6F</option>
+        <option value="choose" class="edit-op" selected>7G</option>
+        <option value="save" class="edit-op">8H</option>
+        <option value="express" class="edit-op">9J</option>
+        <option value="express" class="edit-op">10K</option>
+        <option value="express" class="edit-op">11L</option>
+        <option value="express" class="edit-op">12M</option>
+      </select>
+      </div>
+      <div class="btnsub">
+        <button type="search" value="" id="agree1">Tìm kiếm</button>
+      </div>
+    </div>
+
+    <img src="img/vetau.jpg" alt=""  height="300px" width="700px" id="item">
+  </div>
+
+<div id="column">
+  <div class="row">
+
+    <div class="col-sm-4">
+      <div class="menu1">
+    <h3 class="canh1">Gỏ vé</h3>
+      <p class="canh2">Chưa có vé</p>
+     <button type="submit" value="" class="button">Mua vé</button>
+    </div>
+    </div>
+
+    <div class="col-sm-4">
+      <div class="menu1">
+      <div class="title">Kết nối với chúng tôi</div>
+              <div class="icon">
+                <a href="https://www.facebook.com/profile.php?id=100009200704499" class="slow_fade social_button">
+                  <img src="img/fb.PNG" height="35" width="35"/></a>
+                <a href="#" class="slow_fade social_button">
+                  <img src="img/gg.png" height="32" width="32"/></a>
+                <a href="#" class="slow_fade social_button">
+                  <img src="img/youtube.PNG" height="32" width="32"/></a>
+              </div>
+   </div>
+    </div>
+
+    <div class="col-sm-4">
+      <div class="menu1">
+      <div class="title">Tra cứu hóa đơn</div>
+              <label for="text" class="edit-label">Để tra cứu hóa đơn điện tử, quý khách vui lòng <u><i>bấm vào đây.</i></u></label>
+   </div>
+    </div>
+</div>
+</div>
+
+</div>
+
+
+</body>
+</html>

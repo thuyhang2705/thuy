@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="en" xmlns="http://www.w3.org/1999/html">
+<head>
+    <meta charset="UTF-8">
+    <title> Mau Z</title>
+  <link rel="stylesheet" href="bootstrap-4.3/bootstrap-4.3.1-dist/css/bootstrap.css">
+  <link rel="stylesheet" href="bootstrap-4.3/bootstrap-4.3.1-dist/css/bootstrap-grid.css">
+  <link rel="stylesheet" href="bootstrap-4.3/bootstrap-4.3.1-dist/css/bootstrap-reboot.css">
+</head>
+<style>
+  body{
+    margin:0px;
+    padding:0px;
+    font-family: Arial,Tahoma;
+  }
+  #container{
+    width: 1400px;
+    height: 800px;
+    margin-left: 100px;
+  }
+  .menu {
+    margin-top:2px;
+    width: 1400px;
+    padding-left: 100px;
+  }
+  .menu  ul{
+    padding: 0px;
+    margin: 0px;
+    overflow: auto;
+
+  }
+  .menu  >ul{
+    background: #eeeeee;
+    border-bottom: 2px solid darkred;
+    border-left: 5px solid darkred;
+  }
+  .menu  ul li{
+    list-style: none;
+    float: left;
+    padding: 15px 0 15px 0;
+  }
+  .menu   ul li:hover{
+    background: darkred;
+    cursor: pointer;
+    color: white;
+  }
+  .menu ul li a{
+    font-weight: bold;
+    margin: 0 20px 0 20px;
+  }
+  .menu   ul li:hover a{
+    color: #eeeeee;
+  }
+  .menu  .sub ul{
+    position: absolute;
+    background: #eeeeee;
+    visibility: hidden;
+  }
+  .menu  .sub:hover ul{
+    visibility: visible;
+  }
+  .menu .sub ul li{
+    float: none;
+    border-bottom: 1px solid #333333;
+  }
+  .menu  .sub:hover ul li a{
+    color: #333333;
+  }
+  .menu .sub:hover ul li:hover a{
+    color: #eeeeee;
+  }
+
+  #container .right{
+    margin-top:-45px;
+    padding-left: 1200px;
+  }
+  #container .right .right1{
+    background-color: #FFA500;
+    height: 40px;
+
+  }
+  #container .right .right2{
+    height: 40px;
+    width: 80px;
+  }
+  #container .image{
+    padding-left: 100px;
+    margin-top:5px;
+  }
+  #container .text{
+    margin-top: -397px;
+    padding-left: 146px;
+    color: floralwhite;
+
+  }
+  #container .signup{
+    margin-left:200px;
+
+  }
+  #container .signup .signup1{
+    background-color: #FFA500;
+    height: 40px;
+  }
+  #container .column{
+    padding-left: 146px;
+    margin-top:270px;
+    text-align: left;
+  }
+  #container .column .mau{
+    color: #007bff;
+  }
+
+</style>
+<body>
+<div id="container">
+    <div class="menu">
+      <ul>
+      <li class="sub"><a>Features</a></li>
+      <li class="sub"><a>Pricing</a></li>
+      <li class="sub"><a>Support</a></li>
+      <li class="sub"><a>Blog</a></li>
+      </ul>
+    </div>
+
+<div class="right">
+    <button  class="right1"> Sign Up Free</button>
+    <button class="right2"> Log In</button>
+</div>
+
+
+<div class="image">
+  <img src="img/f3.jpg" height="620px" width="1200px">
+</div>
+
+  <div class="text">
+    <h1>Being yourself makes all the difference</h1>
+    <p> Join more than 20 million people who use MailChimp to grow their business on their terms.</p>
+  </div>
+
+  <div class="signup">
+    <button class="signup1">Sign Up Free</button>
+  </div>
+
+  <div class="column">
+    <div class="row">
+      <div class="col-sm-4">
+        <h4>Features</h4>
+        <p> Our tools empower you to grow your business in a way only you can.</p>
+
+        <p class="mau"> Explore Features</p>
+      </div>
+      <div class="col-sm-4">
+        <h4>Pricing</h4>
+        <p>Start sending emails today for free. Then level up as grow.</p>
+        <p class="mau"> View Pricing</p>
+      </div>
+      <div class="col-sm-4">
+        <h4>E - Commerce</h4>
+        <p>Recapture sales, recommend products and make money in your sleep. </p>
+        <p class="mau">Connect Your Store</p>
+      </div>
+    </div>
+  </div>
+
+</div>
+</body>
+</html>

@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Tao cac chuc nang</title>
+  <style>
+    #container{
+      padding-top: 30px;
+      height: 600px;
+    }
+    #container .header{
+      text-align: center;
+      /*margin-right: 70px;*/
+    }
+    #container #f_a {
+      margin-top: 10px;
+    }
+    #container #f_a .find {
+      float: left;
+      margin-left: 20px;
+    }
+    #container #f_a .find .text3 {
+      margin-left: 300px;
+      float: left;
+      color: black;
+    }
+    #container #f_a .find .fi {
+      width: 300px;
+      height: 30px;
+      float: left;
+      margin-left: 20px;
+      background: #EAEAEA;
+    }
+
+    #container #f_a .find .ad{
+      margin-left: 100px;
+      height: 40px;
+      width:90px;
+    }
+
+    #container #content{
+      height: 300px;
+      width: 900px;
+      padding: 20px;
+      margin-left: 300px;
+    }
+    #container #content .div1 {
+      font-weight: inherit;
+      background-color: #F1C232;
+      width: 300px;
+      height: 200px;
+      margin: 10px;
+      padding: 20px;
+      border: 3px solid black;
+      text-align: left;
+      position: relative;
+      float: left;
+    }
+    #container #content .div1 .text{
+      padding: 1px ;
+      margin:1px;
+      background: white;
+      text-align: center;
+      border-width: 2px;
+      cursor: text;
+    }
+    #container .apply1{
+      margin-top:-20px;
+    }
+    #container .apply1 #agree1 {
+      float: left;
+      width: 150px;
+      height: 30px;
+      background: #a9fd00;
+      font-weight: bold;
+      margin-left: 450px;
+    }
+    #container .apply1 #agree2 {
+      float: left;
+      width: 150px;
+      height: 30px;
+      background: #a9fd00;
+      font-weight: bold;
+      margin-right: 5px;
+    }
+    #container .apply1 #agree3 {
+      float:left;
+      width: 150px;
+      height: 30px;
+      background: #a9fd00;
+      font-weight: bold;
+
+    }
+
+    #container .tablepane{
+
+      height: 200px;
+      margin-left: 300px;
+      padding-top:30px;
+    }
+    #container .tablepane .table {
+      text-align: center;
+      border: 1px black double;
+      margin-top: 20px ;
+
+    }
+
+  </style>
+
+</head>
+<body>
+<div id="container">
+<div id="implement" class="tabcontent">
+  <div class="header"><h2>PHIẾU THUÊ PHÒNG</h2></div>
+  <div id="f_a">
+    <div class="find">
+      <div class="text3"> Tìm kiếm thông tin: </div>
+      <input class="fi" type="search" value="Tìm kiếm...">
+
+    <button class="ad" type="button" onclick="alert('Nhập thông tin mà bạn muốn tìm kiếm ')">SEARCH</button>
+
+
+  <div id="content">
+    <div class="div1">
+      <h3 class="text">Thông tin phiếu thuê</h3>
+
+      <p >Mã phòng &nbsp; &nbsp; <input type="text" name="name" placeholder="" class="pix-text"> </p>
+      <p >Loại phòng &nbsp; &nbsp;<input type="text" name="name" placeholder="" class="pix-text"></p>
+      <p >Ngày thuê&nbsp; &nbsp; &nbsp;<input type="text" name="name" placeholder="" class="pix-text"></p>
+      <p> Ngày trả  &nbsp;&nbsp; &nbsp; &nbsp;<input type="text" name="name" placeholder="" class="pix-text"></p>
+
+    </div>
+    <div class="div1">
+      <h3 class="text">Thông tin khách thuê</h3>
+
+      <p >Tên khách hàng <input type="text" name="name" placeholder="" class="pix-text"></p>
+      <p >Loại khách hàng <input type="text" name="name" placeholder="" class="pix-text"></p>
+      <p >Số CMND &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <input type="text" name="name" placeholder="" class="pix-text"></p>
+      <p >Địa chỉ &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <input type="text" name="name" placeholder="" class="pix-text"></p>
+    </div>
+  </div>
+
+  <div class="apply1">
+    <input id="agree1" type="button" value="ADD" onclick="alert('Mời bạn nhập thông tin muốn thêm vào')"/>
+    <input id="agree2" type="button" value="REMOVE" onclick="alert('Bạn chắc chắc muốn xóa thông tin chứ!')"/>
+    <input id="agree3" type="button" value="EDIT" onclick="alert('Thông tin của bạn đã được sửa')"/>
+  </div>
+  <div class="tablepane">
+    <table  border="1" width="750px"  class="table">
+      <tr>
+        <th>Tên KH </th>
+        <th>Loại KH</th>
+        <th>Số CMND</th>
+        <th>Địa Chỉ</th>
+      </tr>
+      <tr class="tab1">
+        <td>Nguyễn Tú Vi</td>
+        <td>Vip</td>
+        <td>301664576</td>
+        <td>136 khu 8 ấp 3 xã Long Khánh huyện Long Hồ tỉnh Đồng Nai</td>
+      </tr>
+      <tr class="tab1">
+        <td>Nguyễn Nhật Lệ</td>
+        <td>Member</td>
+        <td>301664544</td>
+        <td>129 ấp chợ Mỹ xã Long Cang huyện Cần Đước tỉnh Long An</td>
+      </tr>
+      <tr class="tab1">
+        <td>Mai Văn Minh</td>
+        <td>Normal</td>
+        <td>301448735</td>
+        <td>153 ấp Hòa Bình xã Nghi Xuân Huyện Cần Giuộc tỉnh Long An</td>
+      </tr>
+    </table>
+
+  </div>
+</div>
+</div>
+</div>
+</div>
+</body>
+</html>
